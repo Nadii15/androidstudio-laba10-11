@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -67,17 +68,19 @@ fun StudentInformation(
     studentAge: Int,
     modifier: Modifier = Modifier
 ) {
-    Text(
-        text = stringResource(studentName),
-        modifier = Modifier.padding(top = dimensionResource(R.dimen.padding_small)),
-        style = MaterialTheme.typography.displayMedium
-    )
+    Column(modifier = Modifier) {
+        Text(
+            text = stringResource(studentName),
+            modifier = Modifier.padding(top = dimensionResource(R.dimen.padding_small)),
+            style = MaterialTheme.typography.displayMedium
+        )
 
-    Text(
-        text = stringResource(R.string.years_old , studentAge),
-        style = MaterialTheme.typography.bodyLarge
+        Text(
+            text = stringResource(R.string.years_old, studentAge),
+            style = MaterialTheme.typography.bodyLarge
 
-    )
+        )
+    }
 }
 
 @Composable
