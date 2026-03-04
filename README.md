@@ -1,5 +1,6 @@
 # 📚 Student List App (Список студентов)
-
+###ФИО: Рыхлюк Надежда 
+###Группа: ISP-233
 **Краткое описание:**  
 Приложение представляет собой список студентов с их именами, возрастом и краткими юмористическими описаниями. Каждый элемент списка отображает аватарку студента, имя, возраст и возможность раскрыть подробное описание. Приложение разработано на Kotlin с использованием Jetpack Compose и демонстрирует применение принципов Material Design 3.
 
@@ -61,7 +62,6 @@
 ```kotlin
 implementation("androidx.compose.material3:material3")
 implementation("androidx.compose.material:material-icons-extended")
-implementation("androidx.activity:activity-compose")```
+implementation("androidx.activity:activity-compose")
 
-###ФИО: Рыхлюк Надежда 
-###Группа: ISP-233
+
